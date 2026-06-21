@@ -506,6 +506,10 @@ Rules: faithful to transcript, 5-10 keyPoints, 4-10 concept tags.`;
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("DevClash AI Learning Platform Backend is online!");
+});
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running at http://localhost:${PORT}`);
