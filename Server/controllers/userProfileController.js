@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { UserProfile } from "../models/UserProfile.js";
+import { UserProfile } from "../Models/UserProfile.js";
 
 const DEFAULT_ID = "default";
 
