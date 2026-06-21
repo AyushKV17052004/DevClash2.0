@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.6",
+    "nodemon": "^3.1.14",
+    "openai": "^6.32.0"
+  },
+  "scripts": {
+    "server": "npm run dev --prefix Server",
+    "client": "npm run dev --prefix Frontend",
+    "dev": "concurrently -n SERVER,CLIENT -c yellow,green \"npm run server\" \"npm run client\""
+  }
+}

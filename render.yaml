@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: devclash-learning-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: Server
+    envVars:
+      - key: PORT
+        value: 4000
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: OLLAMA_API_KEY
+        sync: false
+      - key: OLLAMA_BASE_URL
+        value: https://ollama.com/v1
+      - key: OLLAMA_MODEL
+        value: gemma3:4b
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ASSEMBLY_AI_KEY
+        sync: false
+      - key: SOCIALKIT_API_KEY
+        sync: false
+      - key: MONICA_API_KEY
+        sync: false
+      - key: TRANCRIPT
+        sync: false
+      - key: RAPID_API_KEY
+        sync: false
+      - key: SUPADATA_API_KEY
+        sync: false
+      - key: SOSCRIPTED_API_KEY
+        sync: false
